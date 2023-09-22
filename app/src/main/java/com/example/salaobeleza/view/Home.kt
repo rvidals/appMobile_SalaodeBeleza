@@ -34,6 +34,7 @@ class Home : AppCompatActivity() {
         binding.btAgendar.setOnClickListener{
             val intent = Intent(this, Agendamento::class.java)
             intent.putExtra("nome", nome)
+            startActivity(intent)
         }
 
 
